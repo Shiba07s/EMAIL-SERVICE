@@ -8,7 +8,7 @@ version: '3.8'
 
 services:
   email-service:
-    image: email-service-app:latest
+    image: email-service:latest
     build:
       context: .
       dockerfile: Dockerfile
