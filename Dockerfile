@@ -10,13 +10,14 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Build the application
+RUN npm run build
+
 # If you are building your code for production
 # RUN npm ci --only=production
 
 # Copy the rest of the application code to the working directory
 COPY . .
-
-RUN npm run build
 
 # Expose the port on which your app will run
 EXPOSE 3000
