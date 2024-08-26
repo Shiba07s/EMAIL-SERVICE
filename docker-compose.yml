@@ -4,15 +4,13 @@
 #      image : shiba07s/email-service-app:latest
 #      ports :
 #          - "3000:3000"
-version: '3.8'
+version: '3'
 
 services:
-  email-service:
-    image: email-service:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+  frontend:
+    image: shiba07s/email-service:latest
     ports:
       - "3000:3000"
+ 
     # environment:
     #   NODE_ENV: production
