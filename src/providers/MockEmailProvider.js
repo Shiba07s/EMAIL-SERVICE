@@ -1,0 +1,12 @@
+class MockEmailProvider {
+    async sendEmail(to, subject, body) {
+      console.log(`MockEmailProvider sending email to ${to}`);
+      // Simulate success or failure
+      if (Math.random() > 0.7) {
+        throw new Error("Simulated send failure");
+      }
+    }
+  }
+  
+  module.exports = MockEmailProvider;
+  
