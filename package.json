@@ -4,7 +4,8 @@
     "main": "src/EmailService.js",
     "scripts": {
         "start": "node server.js",
-        "test": "jest"
+        "test": "jest",
+        "build": "react-scripts build"
     },
     "dependencies": {
         "express": "^4.19.2",
