@@ -3,9 +3,10 @@
     "version": "1.0.0",
     "main": "src/EmailService.js",
     "scripts": {
-        "start": "node server.js",
+        "start": "node dist/server.js",
+        "build": "babel src -d dist",
         "test": "jest",
-        "build": "npx babel src -d dist"
+        "dev": "nodemon --exec babel-node src/server.js"
     },
     "dependencies": {
         "express": "^4.19.2",
